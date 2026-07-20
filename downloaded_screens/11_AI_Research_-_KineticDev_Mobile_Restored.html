@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Hanken+Grotesk:wght@600;700&amp;family=Geist:wght@400;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        try {
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        "colors": {
+                            "on-secondary-fixed-variant": "#444749",
+                            "on-surface-variant": "#c7c4d7",
+                            "surface-bright": "#31394d",
+                            "on-primary-container": "#0d0096",
+                            "on-tertiary-container": "#1f2a3c",
+                            "on-secondary-container": "#b6b9bb",
+                            "on-error": "#690005",
+                            "inverse-primary": "#494bd6",
+                            "inverse-surface": "#dae2fd",
+                            "on-primary-fixed": "#07006c",
+                            "primary-container": "#6366f1",
+                            "error-container": "#93000a",
+                            "surface-dim": "#0b1326",
+                            "outline-variant": "#464554",
+                            "secondary-fixed": "#e0e3e5",
+                            "inverse-on-surface": "#283044",
+                            "surface-container-lowest": "#060e20",
+                            "primary-fixed-dim": "#c0c1ff",
+                            "on-primary": "#ffffff",
+                            "tertiary-fixed-dim": "#bcc7de",
+                            "secondary-fixed-dim": "#c4c7c9",
+                            "on-secondary": "#2d3133",
+                            "tertiary-container": "#8691a7",
+                            "primary-fixed": "#e1e0ff",
+                            "error": "#ffb4ab",
+                            "background": "#0b1326",
+                            "on-secondary-fixed": "#191c1e",
+                            "on-error-container": "#ffdad6",
+                            "secondary": "#c4c7c9",
+                            "on-tertiary-fixed": "#111c2d",
+                            "on-tertiary": "#263143",
+                            "on-surface": "#dae2fd",
+                            "primary": "#6366f1",
+                            "tertiary-fixed": "#d8e3fb",
+                            "surface-container": "#171f33",
+                            "surface-tint": "#6366f1",
+                            "on-background": "#dae2fd",
+                            "on-tertiary-fixed-variant": "#3c475a",
+                            "surface-variant": "#2d3449",
+                            "surface-container-high": "#222a3d",
+                            "outline": "#908fa0",
+                            "surface-container-highest": "#2d3449",
+                            "surface-container-low": "#131b2e",
+                            "surface": "#0b1326",
+                            "secondary-container": "#464a4b",
+                            "tertiary": "#bcc7de",
+                            "on-primary-fixed-variant": "#2f2ebe"
+                        },
+                        "borderRadius": {
+                            "DEFAULT": "0.25rem",
+                            "lg": "0.5rem",
+                            "xl": "0.75rem",
+                            "full": "9999px"
+                        },
+                        "spacing": {
+                            "stack-sm": "0.5rem",
+                            "container-max": "1280px",
+                            "stack-md": "1.5rem",
+                            "gutter": "2rem",
+                            "margin-desktop": "4rem",
+                            "section-gap": "8rem",
+                            "margin-mobile": "1.5rem"
+                        },
+                        "fontFamily": {
+                            "headline-xl": ["Hanken Grotesk"],
+                            "body-base": ["Inter"],
+                            "headline-lg-mobile": ["Hanken Grotesk"],
+                            "label-caps": ["Geist"],
+                            "body-sm": ["Inter"],
+                            "headline-lg": ["Hanken Grotesk"]
+                        },
+                        "fontSize": {
+                            "headline-xl": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                            "body-base": ["16px", {"lineHeight": "28px", "fontWeight": "400"}],
+                            "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                            "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                            "body-sm": ["14px", {"lineHeight": "24px", "fontWeight": "400"}],
+                            "headline-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+                        }
+                    },
+                },
+            }
+        } catch (_e) {}
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(45, 52, 73, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(144, 143, 160, 0.2);
+        }
+        .orb-glow {
+            box-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-base antialiased">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-outline-variant/30 shadow-sm transition-all duration-300">
+<div class="flex justify-between items-center px-margin-mobile py-4 max-w-container-max mx-auto">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden border border-primary/20">
+<img class="w-full h-full object-cover" data-alt="A professional portrait of a tech-forward developer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7ugPN3j7g7H2LXpGOQQbmWsVgQl8BJhP59I4C1dr4cnguY593c_e-4psuz7vJCqcJN4AH2yVdtlzpOeZSnv6nlyO0Pf5jZpJf2kK6FN3YcmAyYdWQjAwM4EcPxbj-XCkhCxTjhWC_XEAsSI7qRnUHystySIWfSoPjPettLkz1_NENrOIKejED_20nWNZqXpHWlz2mqOzdcVGovuuppLjr3YKgwb2d9Wd93oLPIpYYhF7p_H96QAPTdEiFWAHm7gkHcFawR7Gfmg"/>
+</div>
+</div>
+<button class="px-4 py-2 bg-primary text-on-primary font-label-caps text-label-caps rounded-lg active:scale-95 transition-all shadow-lg shadow-primary/20">Hire Me</button>
+</div>
+</header>
+<main class="pt-24 pb-24 px-margin-mobile space-y-stack-md">
+<!-- Hero / Section Heading -->
+<section class="py-6">
+<div class="inline-flex items-center gap-2 mb-2">
+<div class="w-2 h-2 rounded-full bg-primary animate-pulse orb-glow"></div>
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">Research Laboratory</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-background mb-4">Precision AI Exploration</h1>
+<p class="font-body-base text-body-base text-on-surface-variant max-w-sm">
+                Documenting the intersection of neural architectures and human-centric voice interfaces.
+            </p>
+</section>
+<!-- Search / Filter -->
+<div class="glass-panel rounded-xl p-1 flex items-center gap-2 shadow-sm">
+<div class="flex-1 flex items-center px-3 gap-2">
+<span class="material-symbols-outlined text-primary text-lg">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-body-sm w-full placeholder:text-outline text-on-surface" placeholder="Search research topics..." type="text"/>
+</div>
+<button class="p-2 text-primary">
+<span class="material-symbols-outlined">tune</span>
+</button>
+</div>
+<!-- Research Grid -->
+<div class="grid grid-cols-1 gap-stack-md">
+<!-- Research Card 1: Voice Synthesis-->
+<article class="bg-surface-container border border-outline-variant/30 rounded-xl overflow-hidden group shadow-sm hover:shadow-md transition-shadow">
+<div class="h-48 w-full relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="AI voice synthesis visualization" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTZfqhhrubwwxrnp8NZhGKnUucWctxA0yYws-NtIH5icfVHJSilk7mSdyK9SoH9PA3RaDj0fPpkZNEb52IzxU8iglR0LtJCI66A4PLnquaEgtLhoYNetzx0_REj1JCyeLVdxtoojtUFgfBCiGF-RUqEar-TGtgd25QT7txjpHN-wbH1wWkMQbcFlMQk9FZDoCz7cIP2ZWVdduI4gFACo1-zKPDOiM_BvFuT48hZggGepykUrCQg3_d5EQ4I68EjmcL3nJ0kCA4-A"/>
+<div class="absolute top-4 left-4">
+<span class="bg-surface/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-label-caps text-primary border border-primary/20 uppercase tracking-widest shadow-sm">Active Research</span>
+</div>
+</div>
+<div class="p-6 space-y-3">
+<h2 class="font-headline-lg-mobile text-[24px] text-on-background leading-tight">Neural Voice Synthesis</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                        Optimizing Latent Diffusion Models for real-time, emotive speech generation with sub-100ms latency.
+                    </p>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="px-2 py-1 bg-primary/10 rounded-md font-label-caps text-[10px] text-primary border border-primary/20">DIFFUSION</span>
+<span class="px-2 py-1 bg-primary/10 rounded-md font-label-caps text-[10px] text-primary border border-primary/20">TTS</span>
+<span class="px-2 py-1 bg-primary/10 rounded-md font-label-caps text-[10px] text-primary border border-primary/20">LATENCY</span>
+</div>
+<button class="w-full mt-4 py-3 border border-primary/30 rounded-lg font-label-caps text-label-caps text-primary hover:bg-primary/5 transition-colors flex items-center justify-center gap-2 uppercase">
+                        READ WHITE PAPER <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Research Card 2: Transformer Models -->
+<article class="bg-surface-container border border-outline-variant/30 rounded-xl overflow-hidden group shadow-sm hover:shadow-md transition-shadow">
+<div class="h-48 w-full relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Transformer neural network visualization" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHUqnMFBi3HdQHw76PWioObxp7lnRsbY4tNPnxs9-x_4sPV13fELI3aNdEPQSEwmNr0Wj4i5XnI7DUNnOLpw07QlMw-bGYyh9rFgCdt7W6SOOknZZZ-sQJ17wjmdYi6g_1ZokXX31Gs0cW6TGhSnwLyMJj5qhIkwy1Qg5a-kbkPxGb4fuLeKYV1nU4J2beABT0_VbBKp_VyjkV0N0Ue8wWyThIILdBsyz-Xrg2BRt7VaFwGwKYJQVtIisw2tQwek6-negSbaTNfQ"/>
+<div class="absolute top-4 left-4">
+<span class="bg-surface/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-label-caps text-on-surface-variant border border-outline/20 uppercase tracking-widest shadow-sm">Internal Study</span>
+</div>
+</div>
+<div class="p-6 space-y-3">
+<h2 class="font-headline-lg-mobile text-[24px] text-on-background leading-tight">Transformer Scaling</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                        Evaluating sparse attention mechanisms in large-scale transformers for enterprise-grade mobile deployments.
+                    </p>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="px-2 py-1 bg-primary/10 rounded-md font-label-caps text-[10px] text-primary border border-primary/20">LLM</span>
+<span class="px-2 py-1 bg-primary/10 rounded-md font-label-caps text-[10px] text-primary border border-primary/20">OPTIMIZATION</span>
+</div>
+<button class="w-full mt-4 py-3 border border-primary/30 rounded-lg font-label-caps text-label-caps text-primary hover:bg-primary/5 transition-colors flex items-center justify-center gap-2 uppercase">
+                        VIEW METHODOLOGY <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 3: Small Bento Style -->
+<div class="grid grid-cols-2 gap-stack-md">
+<div class="bg-surface-container border border-outline-variant/30 rounded-xl p-5 flex flex-col justify-between aspect-square shadow-sm">
+<span class="material-symbols-outlined text-primary text-3xl">psychology</span>
+<div>
+<h3 class="font-label-caps text-label-caps text-on-background">Ethical AI</h3>
+<p class="text-[11px] text-on-surface-variant mt-1">Bias mitigation frameworks.</p>
+</div>
+</div>
+<div class="bg-surface-container border border-outline-variant/30 rounded-xl p-5 flex flex-col justify-between aspect-square shadow-sm">
+<span class="material-symbols-outlined text-primary text-3xl">dataset</span>
+<div>
+<h3 class="font-label-caps text-label-caps text-on-background">Dataset Curation</h3>
+<p class="text-[11px] text-on-surface-variant mt-1">High-fidelity voice sets.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Call to Action Section -->
+<section class="py-12 text-center bg-primary/5 rounded-3xl mt-8 mx-0 border border-primary/10">
+<div class="inline-block p-4 rounded-2xl bg-surface-container-high border border-primary/20 mb-6 shadow-sm">
+<span class="material-symbols-outlined text-primary text-4xl">rocket_launch</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-background mb-3">Collaborate?</h2>
+<p class="font-body-base text-body-base text-on-surface-variant mb-8 px-4">
+                I'm currently seeking partnerships for innovative Voice AI implementation projects.
+            </p>
+<div class="px-margin-mobile">
+<button class="w-full py-4 bg-primary text-on-primary rounded-xl font-label-caps text-label-caps tracking-widest shadow-lg shadow-primary/30 active:scale-95 transition-all">
+                    GET IN TOUCH
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-margin-mobile bg-surface-container-low border-t border-outline-variant/20">
+<div class="max-w-container-max mx-auto flex flex-col gap-8 items-center text-center">
+<nav class="flex flex-wrap justify-center gap-6">
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary transition-colors" href="#">Projects</a>
+<a class="text-primary font-label-caps text-label-caps font-semibold" href="#">AI Research</a>
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary transition-colors" href="#">Technical Skills</a>
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex flex-col items-center gap-2">
+<a class="text-primary font-body-sm text-body-sm hover:underline transition-all" href="tel:923337960706">923337960706</a>
+<a class="text-primary font-body-sm text-body-sm hover:underline transition-all" href="mailto:m.raaiq.shahid@gmail.com">m.raaiq.shahid@gmail.com</a>
+<div class="text-on-surface-variant font-body-sm text-body-sm opacity-80 mt-2">© 2024. Precision in Code &amp; Voice.</div>
+</div>
+</div>
+</footer>
+<!-- Bottom Nav for Mobile -->
+<nav class="fixed bottom-0 left-0 w-full bg-surface/90 backdrop-blur-md border-t border-outline-variant/20 md:hidden z-50">
+<div class="flex justify-around items-center py-3">
+<button class="flex flex-col items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-label-caps">HOME</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined">terminal</span>
+<span class="text-[10px] font-label-caps">PROJECTS</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">science</span>
+<span class="text-[10px] font-label-caps">RESEARCH</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-label-caps">PROFILE</span>
+</button>
+</div>
+</nav>
+<script>
+        // Subtle scroll effect for Header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 20) {
+                header.classList.add('shadow-md');
+                header.classList.replace('bg-surface/80', 'bg-surface/95');
+            } else {
+                header.classList.remove('shadow-md');
+                header.classList.replace('bg-surface/95', 'bg-surface/80');
+            }
+        });
+
+        // Simple card interaction simulation
+        document.querySelectorAll('article, .bg-surface-container').forEach(card => {
+            card.addEventListener('touchstart', () => {
+                card.style.transform = 'scale(0.98)';
+            });
+            card.addEventListener('touchend', () => {
+                card.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body></html>

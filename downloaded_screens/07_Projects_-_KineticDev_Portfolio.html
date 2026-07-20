@@ -1,0 +1,377 @@
+<!DOCTYPE html><html lang="en" class="dark" style=""><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Hanken+Grotesk:wght@600;700;800&amp;family=Geist:wght@400;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><meta charset="utf-8"><script id="tailwind-config">try{
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary": "#c4c7c9",
+                      "on-secondary-fixed-variant": "#444749",
+                      "tertiary-container": "#8691a7",
+                      "secondary-fixed-dim": "#c4c7c9",
+                      "on-secondary": "#2d3133",
+                      "on-primary-container": "#0d0096",
+                      "primary-fixed-dim": "#c0c1ff",
+                      "on-tertiary-container": "#1f2a3c",
+                      "on-secondary-container": "#b6b9bb",
+                      "outline": "#908fa0",
+                      "on-tertiary-fixed": "#111c2d",
+                      "secondary-fixed": "#e0e3e5",
+                      "tertiary": "#bcc7de",
+                      "surface-tint": "#c0c1ff",
+                      "surface-container-high": "#222a3d",
+                      "on-error-container": "#ffdad6",
+                      "inverse-primary": "#494bd6",
+                      "error": "#ffb4ab",
+                      "on-surface-variant": "#c7c4d7",
+                      "surface-variant": "#2d3449",
+                      "outline-variant": "#464554",
+                      "inverse-on-surface": "#283044",
+                      "surface-dim": "#0b1326",
+                      "surface-container-highest": "#2d3449",
+                      "primary-fixed": "#e1e0ff",
+                      "tertiary-fixed-dim": "#bcc7de",
+                      "secondary-container": "#464a4b",
+                      "surface-container-lowest": "#060e20",
+                      "surface-container-low": "#131b2e",
+                      "tertiary-fixed": "#d8e3fb",
+                      "on-background": "#dae2fd",
+                      "surface-container": "#171f33",
+                      "on-error": "#690005",
+                      "inverse-surface": "#dae2fd",
+                      "error-container": "#93000a",
+                      "primary-container": "#8083ff",
+                      "primary": "#c0c1ff",
+                      "on-primary-fixed": "#07006c",
+                      "surface-bright": "#31394d",
+                      "on-secondary-fixed": "#191c1e",
+                      "on-primary-fixed-variant": "#2f2ebe",
+                      "on-tertiary-fixed-variant": "#3c475a",
+                      "background": "#0b1326",
+                      "surface": "#0b1326",
+                      "on-tertiary": "#263143",
+                      "on-surface": "#dae2fd",
+                      "on-primary": "#1000a9"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "gutter": "2rem",
+                      "stack-sm": "0.5rem",
+                      "section-gap": "8rem",
+                      "margin-mobile": "1.5rem",
+                      "stack-md": "1.5rem",
+                      "container-max": "1280px",
+                      "margin-desktop": "4rem"
+              },
+              "fontFamily": {
+                      "headline-lg-mobile": ["Hanken Grotesk"],
+                      "label-caps": ["Geist"],
+                      "headline-xl": ["Hanken Grotesk"],
+                      "headline-lg": ["Hanken Grotesk"],
+                      "body-base": ["Inter"],
+                      "body-sm": ["Inter"]
+              },
+              "fontSize": {
+                      "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                      "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "headline-xl": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "headline-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                      "body-base": ["16px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "body-sm": ["14px", {"lineHeight": "24px", "fontWeight": "400"}]
+              }
+            },
+          },
+        }
+    }catch(_e){}</script><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Hanken+Grotesk:wght@100..900&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"></head><body class="bg-background text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/60 backdrop-blur-xl border-b border-outline-variant/20 shadow-sm shadow-primary/5">
+<div class="flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full overflow-hidden border border-primary/30">
+<img class="w-full h-full object-cover" data-alt="A professional, high-resolution portrait of a software developer wearing a sleek navy suit, standing against a cinematic blurred city skyline at twilight. The lighting is sophisticated, with blue and amber highlights reflecting a modern urban atmosphere. The style is premium corporate photography with a sharp focus on the developer's confident expression." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbjzGOuZ7mkDACoSbnjojlryOvLxfLiDQlEjk0iJp36wPxqgAbfh1QH9G5GcDS72aeZv3rh5Nn9YZjXUGZhldDZDwkA39Ghi-hLTgchQMNw17NPvLesxEmcAh8E0btP7vEbHVH1CTiToZ919G7H5bclllMSYweFeboJdNQx-L6O-QB6NyN5AZ9XCF79DrUzeX7RIHes_7O-uIs45qVoEA8461awmeCunbAZtC5UsJ5j6LdDTsuOSsR6L3ONAjc_S1A5sRRStRuHg">
+</div>
+
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant hover:text-primary font-label-caps text-label-caps transition-all duration-300" href="#">Projects</a>
+<a class="text-on-surface-variant hover:text-primary font-label-caps text-label-caps transition-all duration-300" href="#">AI Research</a>
+<a class="text-on-surface-variant hover:text-primary font-label-caps text-label-caps transition-all duration-300" href="#">Technical Skills</a>
+</nav>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-caps text-label-caps font-bold hover:scale-95 transition-all duration-150">Hire Me</button>
+</div>
+</header>
+<main class="pt-32 pb-section-gap">
+<section class="max-w-container-max mx-auto px-margin-desktop">
+<!-- Header & Filter -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-stack-md mb-12">
+<div class="max-w-2xl">
+<h1 class="font-headline-xl text-headline-xl text-on-background mb-4">Crafted Solutions.</h1>
+<p class="font-body-base text-body-base text-on-surface-variant">A curated showcase of high-performance web applications and cutting-edge Voice AI integrations developed with mathematical precision.</p>
+</div>
+<div class="flex gap-2 p-1 bg-surface-container rounded-full border border-outline-variant/20">
+<button class="px-6 py-2 rounded-full font-label-caps text-label-caps transition-all active-filter bg-primary text-on-primary" onclick="filterProjects('all')">All</button>
+<button class="px-6 py-2 rounded-full font-label-caps text-label-caps transition-all text-on-surface-variant hover:bg-white/5" onclick="filterProjects('web')">Web</button>
+<button class="px-6 py-2 rounded-full font-label-caps text-label-caps transition-all text-on-surface-variant hover:bg-white/5" onclick="filterProjects('ai')">AI</button>
+</div>
+</div>
+<!-- Projects Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+<!-- Project Card 1: AI -->
+<div class="glass-card rounded-xl overflow-hidden flex flex-col group project-item" data-category="ai">
+<div class="h-64 relative overflow-hidden">
+
+<div class="absolute top-4 right-4 z-10">
+<div class="w-3 h-3 rounded-full ai-pulse bg-primary"></div>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent opacity-60"></div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<div class="flex items-center gap-2 mb-4">
+<span class="font-label-caps text-[10px] uppercase tracking-widest text-primary border border-primary/30 px-2 py-0.5 rounded">Voice AI</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg-mobile mb-2">Aether Voice Core</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">Real-time low-latency LLM orchestration for autonomous executive assistants.</p>
+<div class="reveal-specs mb-6 grid grid-cols-2 gap-4">
+<div>
+<p class="font-label-caps text-[10px] text-outline uppercase mb-1">Latency</p>
+<p class="text-on-surface font-bold">&lt; 200ms</p>
+</div>
+<div>
+<p class="font-label-caps text-[10px] text-outline uppercase mb-1">Stack</p>
+<p class="text-on-surface font-bold">FastAPI / GPT-4o</p>
+</div>
+</div>
+<div class="mt-auto flex items-center justify-between">
+<div class="flex gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="settings_voice">settings_voice</span>
+<span class="material-symbols-outlined text-primary" data-icon="neurology">neurology</span>
+</div>
+<a class="flex items-center gap-2 text-primary font-bold font-label-caps text-label-caps group-hover:translate-x-1 transition-transform" href="#">
+                                View Case Study
+                                <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Project Card 2: Web -->
+<div class="glass-card rounded-xl overflow-hidden flex flex-col group project-item" data-category="web">
+<div class="h-64 relative bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A clean, minimalist high-fidelity UI design of a financial dashboard. Features intricate glassmorphism panels, complex SVG data visualizations, and a dark slate aesthetic with electric purple accents. The interface looks extremely polished and responsive, showcasing premium React components and smooth typography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBczPlLSjrpi4-BSU17u4r1Q2qBQPoDZa5HM3F0N__ZjmNc-b6g_2fl3qXNWqix7xIURnV-1ZKfyPcXq5iS2pffi4VL6nfGxq2xgvVDBGwHmzD-bKUjZFwSaI5V1iXT2uFImZba-YXskbaZ-zas1sA2FyukY2vqRMYoG0Lmz0VtM6w2Eer0Kngq5emES4V0Ra7yVrKUAmmqu9L8eqiX16TQOPpB6QqHcljUsmontq7Iizi5KXzmcdPSMze1TEvKjxLKBUonhK5Nzg">
+<div class="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<div class="flex items-center gap-2 mb-4">
+<span class="font-label-caps text-[10px] uppercase tracking-widest text-secondary border border-outline-variant px-2 py-0.5 rounded">Web Dev</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg-mobile mb-2">Nexus FinTech</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">High-frequency trading dashboard with sub-second data propagation and React optimization.</p>
+<div class="reveal-specs mb-6 grid grid-cols-2 gap-4">
+<div>
+<p class="font-label-caps text-[10px] text-outline uppercase mb-1">Framework</p>
+<p class="text-on-surface font-bold">Next.js 14</p>
+</div>
+<div>
+<p class="font-label-caps text-[10px] text-outline uppercase mb-1">State</p>
+<p class="text-on-surface font-bold">Zustand / TanStack</p>
+</div>
+</div>
+<div class="mt-auto flex items-center justify-between">
+<div class="flex gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="dashboard">dashboard</span>
+<span class="material-symbols-outlined text-secondary" data-icon="show_chart">show_chart</span>
+</div>
+<a class="flex items-center gap-2 text-primary font-bold font-label-caps text-label-caps group-hover:translate-x-1 transition-transform" href="#">
+                                View Case Study
+                                <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Project Card 3: AI -->
+<div class="glass-card rounded-xl overflow-hidden flex flex-col group project-item" data-category="ai">
+<div class="h-64 relative overflow-hidden flex items-center justify-center bg-surface-container">
+
+<div class="absolute bottom-0 left-0 w-full p-4 flex justify-between items-center bg-surface/40 backdrop-blur-md">
+<span class="text-xs font-label-caps text-primary">Neural Mesh Visualization</span>
+<span class="material-symbols-outlined text-xs text-primary" data-icon="hub">hub</span>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<div class="flex items-center gap-2 mb-4">
+<span class="font-label-caps text-[10px] uppercase tracking-widest text-primary border border-primary/30 px-2 py-0.5 rounded">Voice AI</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg-mobile mb-2">Synthetix Labs</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">Custom RAG implementation for large-scale enterprise knowledge bases via voice query.</p>
+<div class="reveal-specs mb-6 grid grid-cols-2 gap-4">
+<div>
+<p class="font-label-caps text-[10px] text-outline uppercase mb-1">Vector DB</p>
+<p class="text-on-surface font-bold">Pinecone</p>
+</div>
+<div>
+<p class="font-label-caps text-[10px] text-outline uppercase mb-1">Model</p>
+<p class="text-on-surface font-bold">Claude 3.5 Sonnet</p>
+</div>
+</div>
+<div class="mt-auto flex items-center justify-between">
+<div class="flex gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="database">database</span>
+<span class="material-symbols-outlined text-primary" data-icon="record_voice_over">record_voice_over</span>
+</div>
+<a class="flex items-center gap-2 text-primary font-bold font-label-caps text-label-caps group-hover:translate-x-1 transition-transform" href="#">
+                                View Case Study
+                                <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Project Card 4: Web -->
+<div class="glass-card rounded-xl overflow-hidden flex flex-col group project-item" data-category="web">
+<div class="h-64 relative bg-surface-container-low">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A sophisticated three-dimensional hero section of an architectural portfolio website. The visual features floating 3D wireframe models of a modern skyscraper, glowing in cyan and white. The background is a deep charcoal grey with subtle grid patterns. The composition is artistic and technical, suggesting high-end creative development work." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBK2IkSFt-VAAJ_bVr47GWXcAE5iE6q3gZHKXmuzbQLTBmwZ_QV0TixPfTuaQXIIZFWRpIVtL7tIwCYZgYh0FZQgF2r7oAz0w1ti5rjov8obztzRTMIAq5-RoyJBy9EkoC-EhCf2frSVQokMXelFK1FfWe7V-V98XA5Fapc4-3c-0bB_4VwgOW8QCuRuufJDRNXJM7ghp-yCyKIrMgf4Xmtb0nqincMepC4bov7DZWkzLdVQTWNqDqhtnxSf-q3fUgoGvBtQsR0Cw')"></div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<div class="flex items-center gap-2 mb-4">
+<span class="font-label-caps text-[10px] uppercase tracking-widest text-secondary border border-outline-variant px-2 py-0.5 rounded">Web Dev</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg-mobile mb-2">Flux Portfolio</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">A high-end creative agency portfolio focusing on Three.js animations and performance.</p>
+<div class="reveal-specs mb-6 grid grid-cols-2 gap-4">
+<div>
+<p class="font-label-caps text-[10px] text-outline uppercase mb-1">3D Engine</p>
+<p class="text-on-surface font-bold">Three.js / R3F</p>
+</div>
+<div>
+<p class="font-label-caps text-[10px] text-outline uppercase mb-1">Perf Score</p>
+<p class="text-on-surface font-bold">100 Lighthouse</p>
+</div>
+</div>
+<div class="mt-auto flex items-center justify-between">
+<div class="flex gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="architecture">architecture</span>
+<span class="material-symbols-outlined text-secondary" data-icon="animation">animation</span>
+</div>
+<a class="flex items-center gap-2 text-primary font-bold font-label-caps text-label-caps group-hover:translate-x-1 transition-transform" href="#">
+                                View Case Study
+                                <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Project Card 5: AI -->
+<div class="glass-card rounded-xl overflow-hidden flex flex-col group project-item" data-category="ai">
+<div class="h-64 relative overflow-hidden">
+
+<div class="absolute inset-0 bg-gradient-to-b from-surface/20 to-surface"></div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<div class="flex items-center gap-2 mb-4">
+<span class="font-label-caps text-[10px] uppercase tracking-widest text-primary border border-primary/30 px-2 py-0.5 rounded">Voice AI</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg-mobile mb-2">Echo Semantics</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">Semantic sentiment analysis and intent detection through vocal tonal frequency mapping.</p>
+<div class="reveal-specs mb-6 grid grid-cols-2 gap-4">
+<div>
+<p class="font-label-caps text-[10px] text-outline uppercase mb-1">Method</p>
+<p class="text-on-surface font-bold">Spectral Analysis</p>
+</div>
+<div>
+<p class="font-label-caps text-[10px] text-outline uppercase mb-1">Accuracy</p>
+<p class="text-on-surface font-bold">98.4% Intent</p>
+</div>
+</div>
+<div class="mt-auto flex items-center justify-between">
+<div class="flex gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="waves">waves</span>
+<span class="material-symbols-outlined text-primary" data-icon="psychology">psychology</span>
+</div>
+<a class="flex items-center gap-2 text-primary font-bold font-label-caps text-label-caps group-hover:translate-x-1 transition-transform" href="#">
+                                View Case Study
+                                <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- CTA Bento Piece -->
+<div class="bg-surface-container-high rounded-xl p-12 flex flex-col justify-center items-center text-center border border-primary/10 relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent"></div>
+<span class="material-symbols-outlined text-6xl text-primary/40 mb-6" data-icon="code_blocks">code_blocks</span>
+<h3 class="font-headline-lg text-headline-lg-mobile mb-4">Have a concept in mind?</h3>
+<p class="font-body-base text-body-base text-on-surface-variant mb-8 max-w-xs">Let's bridge the gap between technical complexity and intuitive human experience.</p>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-bold font-label-caps text-label-caps hover:scale-105 transition-transform">Start Project</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant/10 w-full py-12 px-margin-desktop">
+<div class="flex flex-col md:flex-row justify-between items-center gap-stack-md max-w-container-max mx-auto">
+<div class="flex flex-col gap-2">
+
+<p class="font-body-sm text-body-sm text-on-surface-variant">© 2024. Precision in Code &amp; Voice.</p><a href="mailto:m.raaiq.shahid@gmail.com" class="font-body-sm text-body-sm text-primary hover:text-on-surface transition-colors duration-300">m.raaiq.shahid@gmail.com</a><a href="tel:923337960706" class="font-body-sm text-body-sm text-primary hover:text-on-surface transition-colors duration-300">+92 333 7960706</a>
+</div>
+<div class="flex gap-8">
+<a class="text-on-surface-variant hover:text-primary font-label-caps text-label-caps transition-colors" href="#">Projects</a>
+<a class="text-on-surface-variant hover:text-primary font-label-caps text-label-caps transition-colors" href="#">AI Research</a>
+<a class="text-on-surface-variant hover:text-primary font-label-caps text-label-caps transition-colors" href="#">Technical Skills</a>
+<a class="text-on-surface-variant hover:text-primary font-label-caps text-label-caps transition-colors" href="#">Contact</a>
+</div>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary cursor-pointer transition-colors">
+<span class="material-symbols-outlined" data-icon="terminal">terminal</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary cursor-pointer transition-colors">
+<span class="material-symbols-outlined" data-icon="database">database</span>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        function filterProjects(category) {
+            const items = document.querySelectorAll('.project-item');
+            const buttons = document.querySelectorAll('[onclick^="filterProjects"]');
+            
+            // Update buttons
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-primary', 'text-on-primary');
+                btn.classList.add('text-on-surface-variant', 'hover:bg-white/5');
+                if(btn.getAttribute('onclick').includes(category)) {
+                    btn.classList.remove('text-on-surface-variant', 'hover:bg-white/5');
+                    btn.classList.add('bg-primary', 'text-on-primary');
+                }
+            });
+
+            // Filter items
+            items.forEach(item => {
+                if (category === 'all' || item.dataset.category === category) {
+                    item.style.display = 'flex';
+                    setTimeout(() => {
+                        item.style.opacity = '1';
+                        item.style.transform = 'scale(1)';
+                    }, 10);
+                } else {
+                    item.style.opacity = '0';
+                    item.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        item.style.display = 'none';
+                    }, 300);
+                }
+            });
+        }
+
+        // Simple mouse tracking for a floating glow effect (Atmospheric interaction)
+        document.addEventListener('mousemove', (e) => {
+            const cards = document.querySelectorAll('.glass-card');
+            cards.forEach(card => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+    </script>
+</body></html>

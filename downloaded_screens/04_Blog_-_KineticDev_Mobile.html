@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>KineticDev | Insights &amp; Innovation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Hanken+Grotesk:wght@600;700;800&amp;family=Geist:wght@600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-low": "#131b2e",
+                    "outline-variant": "#464554",
+                    "on-error-container": "#ffdad6",
+                    "on-tertiary-fixed": "#111c2d",
+                    "on-primary-fixed-variant": "#2f2ebe",
+                    "on-surface": "#dae2fd",
+                    "on-secondary-fixed": "#191c1e",
+                    "secondary-container": "#464a4b",
+                    "surface-container-lowest": "#060e20",
+                    "inverse-surface": "#dae2fd",
+                    "primary": "#c0c1ff",
+                    "on-surface-variant": "#c7c4d7",
+                    "secondary-fixed-dim": "#c4c7c9",
+                    "on-secondary": "#2d3133",
+                    "tertiary": "#bcc7de",
+                    "on-tertiary": "#263143",
+                    "on-secondary-fixed-variant": "#444749",
+                    "on-secondary-container": "#b6b9bb",
+                    "on-primary-fixed": "#07006c",
+                    "surface-bright": "#31394d",
+                    "inverse-on-surface": "#283044",
+                    "surface-container-high": "#222a3d",
+                    "background": "#0b1326",
+                    "surface": "#0b1326",
+                    "on-tertiary-fixed-variant": "#3c475a",
+                    "primary-fixed-dim": "#c0c1ff",
+                    "surface-dim": "#0b1326",
+                    "on-error": "#690005",
+                    "secondary": "#c4c7c9",
+                    "error": "#ffb4ab",
+                    "surface-container": "#171f33",
+                    "primary-container": "#8083ff",
+                    "inverse-primary": "#494bd6",
+                    "primary-fixed": "#e1e0ff",
+                    "on-background": "#dae2fd",
+                    "tertiary-fixed": "#d8e3fb",
+                    "on-tertiary-container": "#1f2a3c",
+                    "on-primary-container": "#0d0096",
+                    "outline": "#908fa0",
+                    "on-primary": "#1000a9",
+                    "surface-variant": "#2d3449",
+                    "secondary-fixed": "#e0e3e5",
+                    "error-container": "#93000a",
+                    "tertiary-fixed-dim": "#bcc7de",
+                    "tertiary-container": "#8691a7",
+                    "surface-tint": "#c0c1ff",
+                    "surface-container-highest": "#2d3449"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "stack-sm": "0.5rem",
+                    "margin-desktop": "4rem",
+                    "gutter": "2rem",
+                    "margin-mobile": "1.5rem",
+                    "stack-md": "1.5rem",
+                    "section-gap": "8rem"
+            },
+            "fontFamily": {
+                    "headline-xl": ["Hanken Grotesk"],
+                    "headline-lg-mobile": ["Hanken Grotesk"],
+                    "body-sm": ["Inter"],
+                    "body-base": ["Inter"],
+                    "headline-lg": ["Hanken Grotesk"],
+                    "label-caps": ["Geist"]
+            },
+            "fontSize": {
+                    "headline-xl": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "body-sm": ["14px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "body-base": ["16px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #0b1326;
+            color: #dae2fd;
+            -webkit-font-smoothing: antialiased;
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(51, 65, 85, 0.5);
+        }
+        .glow-orb {
+            filter: blur(40px);
+            opacity: 0.15;
+            background: #8083ff;
+            animation: pulse 4s ease-in-out infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.1; }
+            50% { transform: scale(1.2); opacity: 0.2; }
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 bg-surface/60 backdrop-blur-xl border-b border-outline-variant/20 shadow-sm shadow-primary/5">
+<div class="flex justify-between items-center px-margin-mobile py-4 max-w-container-max mx-auto">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full overflow-hidden border border-primary/30">
+<img class="w-full h-full object-cover" data-alt="A professional close-up portrait of a developer wearing a sleek navy suit, positioned against a blurred futuristic city skyline at dusk. The lighting is crisp and cinematic with subtle indigo highlights on the facial features, conveying a sense of high-end corporate intelligence and technological expertise." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEL9JS-AoFU4amc8-M0ZeN8w21RFdUwFRR6ts5OhbrihywB6vjn5pZrUa1b5fhzQS8ElNJTULzLVW_NChfTWOMvQaD9lHQUCSuxvlhFhI_vCQqVk6toI0G1IK21pwqlyUhH5G_xIOE6cWZShg96MNo-cqbUZoe_IL3bKNWXCOZPWKDqCfq8CDCrcc4-VVV-8FX-jI3vISdHYkYEWXSNUlt4pjbkycFMGSd-yl2qsdwqhCNpanmMkDZXcwf81WyFoh6CNOYwO76vw"/>
+</div>
+<span class="font-headline-lg-mobile text-headline-lg-mobile font-bold tracking-tighter text-on-background">KineticDev</span>
+</div>
+<button class="bg-primary text-on-primary font-label-caps text-label-caps px-4 py-2 rounded-full active:scale-95 duration-150">
+                Hire Me
+            </button>
+</div>
+</header>
+<main class="pt-24 pb-12 px-margin-mobile">
+<!-- AI Atmospheric Element -->
+<div class="fixed top-1/4 right-0 w-64 h-64 glow-orb rounded-full -z-10"></div>
+<div class="fixed bottom-1/4 left-0 w-48 h-48 glow-orb rounded-full -z-10" style="animation-delay: 2s;"></div>
+<!-- Header Section -->
+<section class="mb-12">
+<div class="flex items-center gap-2 mb-2">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-widest">Insights Hub</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-background mb-4">Code, Voice &amp; Strategy</h1>
+<p class="font-body-base text-body-base text-on-surface-variant max-w-md">Exploring the intersection of enterprise development and the next generation of Voice AI interfaces.</p>
+</section>
+<!-- Blog Feed -->
+<div class="space-y-stack-md">
+<!-- Card 1: Voice AI Benefits -->
+<article class="glass-card rounded-xl overflow-hidden group">
+<div class="h-48 relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A conceptual 3D visualization of sound waves morphing into geometric digital structures. The color palette features deep indigo and electric blue gradients against a slate-gray background. Soft, glowing light trails indicate motion and data processing, creating a high-tech, ethereal atmosphere focused on the future of communication." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHv4cT0iC7siqqWI--a6rK0ZCTOo43B_HRFI_rSYfIFO_oTtvJAfcKIPjmHkugZY0pv2bGhtWj1keHWH-b0ML4fpj1-DIsSAbtwjU3Tak_6j8SFsIO2FfHVUJ0hvul-X6kaSO7wPwoH1ZfefsMsgOicJf-J1TBCtCUBL6NmCS__zgwQN-4894hjc0VcEETSa5DRufclR1TZ8mXbqsd6KM5jYfS4vIYzoRSKN9D_KAMuyt0_dOjlTCS4W1WXIjSQzpGXEsgkdrKGg"/>
+<div class="absolute top-4 left-4 bg-surface/80 backdrop-blur-md px-3 py-1 rounded-full border border-outline-variant/30">
+<span class="font-label-caps text-[10px] text-primary">VOICE AI</span>
+</div>
+</div>
+<div class="p-6">
+<h2 class="font-headline-lg-mobile text-[24px] text-on-background mb-3 leading-tight">The Executive Case for Custom Voice AI</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">How bespoke neural voices are redefining customer loyalty and operational efficiency in the Fortune 500 space.</p>
+<div class="flex justify-between items-center">
+<span class="font-label-caps text-[11px] text-outline">5 MIN READ</span>
+<a class="flex items-center gap-1 text-primary font-label-caps text-label-caps group/link" href="#">
+                            Read Article 
+                            <span class="material-symbols-outlined text-[18px] group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Card 2: SEO Optimization -->
+<article class="glass-card rounded-xl overflow-hidden group">
+<div class="h-48 relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A sophisticated data visualization showing complex interlocking nodes and glowing neural pathways against a deep charcoal background. The nodes represent digital keywords and search parameters, connected by thin, sharp indigo lines. The lighting is atmospheric and low-key, suggesting a secret, high-performance optimization process." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDptw_46SqrIkGCVI9XBKkc141HyHilbEuYITT0FNHWixD_BCmOLC93byiovw13OgHSM5fMC6IEJO17EuJsWOGt8cTzFd1sKXC8YqPX-fr9ukAV2ctKYlWowYpiLxTTLIQj0Lyixcbr5NDJz1W_og92g8BLc3VGcvOH1iI5IlPT_Dl8zOpgQb-7zYLXgjeDVlayLzDsHyyZSWuEFGMsiB1YDEdzycH4UhsevMFQrtNCzHZErdTB0QMw8DkCqQGhvy9EjzUa948YDA"/>
+<div class="absolute top-4 left-4 bg-surface/80 backdrop-blur-md px-3 py-1 rounded-full border border-outline-variant/30">
+<span class="font-label-caps text-[10px] text-primary">SEO &amp; GROWTH</span>
+</div>
+</div>
+<div class="p-6">
+<h2 class="font-headline-lg-mobile text-[24px] text-on-background mb-3 leading-tight">Beyond Keywords: Semantic Architecture</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">Moving past traditional SEO to build content engines that satisfy both LLMs and human searchers simultaneously.</p>
+<div class="flex justify-between items-center">
+<span class="font-label-caps text-[11px] text-outline">8 MIN READ</span>
+<a class="flex items-center gap-1 text-primary font-label-caps text-label-caps group/link" href="#">
+                            Read Article 
+                            <span class="material-symbols-outlined text-[18px] group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Card 3: Business Impact -->
+<article class="glass-card rounded-xl overflow-hidden group">
+<div class="h-48 relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A high-contrast macro shot of a sleek glass skyscraper reflecting a stormy, deep blue sky. The architectural lines are sharp and vertical, symbolizing growth and corporate strength. Subtle indigo color grading enhances the glass surfaces, creating a moody, professional look that emphasizes stability and high-impact business solutions." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpkPXWLFOyPwjopHpTqUJ6rzNx8IDU0T8YzwX9tPIWgoqSvvFi0MxwJMUQd3V9u-UnFFRnfJlhxV8ScAz2zogPGABfgwGJ21Yk3Ut4YPeL6Wbd_C9bUW2MbP2CEchLuMb7cw7XyuC-2VxCXBJZhTX_vY_XBTSW4o9jlmqst9O-hQxoYCMuGTCymnipsYCAkwY5m1ofHd1w_Qwzb7u1lKvPojU2QO2nEj4V8ppdgu2KL8RPxYAJ3iyQKa5Luk-MJAYj5nSAHrpPdg"/>
+<div class="absolute top-4 left-4 bg-surface/80 backdrop-blur-md px-3 py-1 rounded-full border border-outline-variant/30">
+<span class="font-label-caps text-[10px] text-primary">BUSINESS</span>
+</div>
+</div>
+<div class="p-6">
+<h2 class="font-headline-lg-mobile text-[24px] text-on-background mb-3 leading-tight">The ROI of High-Performance UI</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">Measuring the direct correlation between micro-interactions and conversion rates in enterprise SaaS platforms.</p>
+<div class="flex justify-between items-center">
+<span class="font-label-caps text-[11px] text-outline">6 MIN READ</span>
+<a class="flex items-center gap-1 text-primary font-label-caps text-label-caps group/link" href="#">
+                            Read Article 
+                            <span class="material-symbols-outlined text-[18px] group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Card 4: Future Trends -->
+<article class="glass-card rounded-xl overflow-hidden group">
+<div class="h-48 relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A minimalist abstract art piece depicting a horizon line between a deep midnight blue sea and a twilight sky. A single, glowing indigo sphere floats in the center, representing future potential and singular focus. The style is clean and futuristic, with a soft grain texture and a heavy emphasis on vast, open whitespace." src="https://lh3.googleusercontent.com/aida-public/AB6AXuARv62mfhazpK5ttefQVgYy_1-GYx2CeW0gbFFLQlVSXCztniT6C0YHPjZN5iPWqRjdfK-jmChrfj8pRHuoZZftQ4jVS9DrqV9ftL2GKbfMNOjFwjE_BI3rAUbEcNzI4HH-8TVKxd0mDxnfdEUWi7BNgYAntpMVqR3dt5nl2QzWwwzq1-84aJY95H1wpOLY7cTrdWBjej9Dv-JDjVzSAoUhGJxRZozD2C8Z4Tc-ECIVxP5xVe3cASmlu4EKjflTqf2uwGzp0gEIlA"/>
+<div class="absolute top-4 left-4 bg-surface/80 backdrop-blur-md px-3 py-1 rounded-full border border-outline-variant/30">
+<span class="font-label-caps text-[10px] text-primary">FUTURE TECH</span>
+</div>
+</div>
+<div class="p-6">
+<h2 class="font-headline-lg-mobile text-[24px] text-on-background mb-3 leading-tight">Predictive UI: Anticipating Intent</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">Exploring the shift from reactive to proactive design systems that leverage local AI for user anticipation.</p>
+<div class="flex justify-between items-center">
+<span class="font-label-caps text-[11px] text-outline">12 MIN READ</span>
+<a class="flex items-center gap-1 text-primary font-label-caps text-label-caps group/link" href="#">
+                            Read Article 
+                            <span class="material-symbols-outlined text-[18px] group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+</div>
+<!-- Pagination / Load More -->
+<div class="mt-12 text-center">
+<button class="w-full py-4 glass-card rounded-xl font-label-caps text-label-caps text-primary border border-primary/20 hover:bg-primary/10 transition-all">
+                Load More Articles
+            </button>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-margin-mobile border-t border-outline-variant/10 bg-surface-container-lowest">
+<div class="flex flex-col gap-stack-md max-w-container-max mx-auto text-center">
+<div class="font-headline-lg-mobile text-headline-lg-mobile text-on-background">KineticDev</div>
+<nav class="flex flex-wrap justify-center gap-6">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">Projects</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">AI Research</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">Technical Skills</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+<div class="font-body-sm text-body-sm text-outline-variant mt-4">
+                © 2024 KineticDev. Precision in Code &amp; Voice.
+            </div>
+</div>
+</footer>
+<!-- Interactive Layer for Cards -->
+<script>
+        document.querySelectorAll('article').forEach(card => {
+            card.addEventListener('touchstart', function() {
+                this.classList.add('scale-[0.98]');
+            });
+            card.addEventListener('touchend', function() {
+                this.classList.remove('scale-[0.98]');
+            });
+        });
+    </script>
+</body></html>

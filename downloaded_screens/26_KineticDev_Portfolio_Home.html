@@ -1,0 +1,333 @@
+<!DOCTYPE html><html lang="en" class="dark" style=""><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600;700&amp;family=Inter:wght@400;500&amp;family=Geist:wght@600&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "surface-container-lowest": "#060e20",
+                "on-background": "#dae2fd",
+                "on-secondary": "#2d3133",
+                "on-tertiary": "#263143",
+                "surface-tint": "#c0c1ff",
+                "primary": "#c0c1ff",
+                "surface": "#0b1326",
+                "on-primary-fixed-variant": "#2f2ebe",
+                "secondary-fixed-dim": "#c4c7c9",
+                "surface-container-highest": "#2d3449",
+                "surface-container": "#171f33",
+                "inverse-surface": "#dae2fd",
+                "tertiary-fixed": "#d8e3fb",
+                "on-primary-fixed": "#07006c",
+                "error-container": "#93000a",
+                "on-primary": "#1000a9",
+                "on-tertiary-fixed": "#111c2d",
+                "tertiary-container": "#8691a7",
+                "on-primary-container": "#0d0096",
+                "on-surface-variant": "#c7c4d7",
+                "primary-fixed": "#e1e0ff",
+                "on-secondary-fixed": "#191c1e",
+                "surface-container-low": "#131b2e",
+                "surface-dim": "#0b1326",
+                "tertiary-fixed-dim": "#bcc7de",
+                "surface-bright": "#31394d",
+                "on-error-container": "#ffdad6",
+                "primary-container": "#8083ff",
+                "inverse-on-surface": "#283044",
+                "error": "#ffb4ab",
+                "on-error": "#690005",
+                "outline": "#908fa0",
+                "on-tertiary-container": "#1f2a3c",
+                "surface-variant": "#2d3449",
+                "primary-fixed-dim": "#c0c1ff",
+                "on-secondary-fixed-variant": "#444749",
+                "secondary-container": "#464a4b",
+                "on-tertiary-fixed-variant": "#3c475a",
+                "secondary": "#c4c7c9",
+                "on-surface": "#dae2fd",
+                "background": "#0b1326",
+                "tertiary": "#bcc7de",
+                "secondary-fixed": "#e0e3e5",
+                "inverse-primary": "#494bd6",
+                "surface-container-high": "#222a3d",
+                "on-secondary-container": "#b6b9bb",
+                "outline-variant": "#464554"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "container-max": "1280px",
+                "stack-md": "1.5rem",
+                "margin-mobile": "1.5rem",
+                "gutter": "2rem",
+                "section-gap": "8rem",
+                "stack-sm": "0.5rem",
+                "margin-desktop": "4rem"
+            },
+            "fontFamily": {
+                "body-base": ["Inter"],
+                "body-sm": ["Inter"],
+                "headline-lg": ["Hanken Grotesk"],
+                "headline-xl": ["Hanken Grotesk"],
+                "label-caps": ["Geist"],
+                "headline-lg-mobile": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                "body-base": ["16px", {"lineHeight": "28px", "fontWeight": "400"}],
+                "body-sm": ["14px", {"lineHeight": "24px", "fontWeight": "400"}],
+                "headline-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                "headline-xl": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    }catch(_e){}</script></head><body class="bg-background text-on-background font-body-base selection:bg-primary/30">
+
+    <!-- TopAppBar -->
+    <nav class="fixed top-0 w-full z-50 bg-surface/60 backdrop-blur-xl border-b border-outline-variant/20 shadow-sm shadow-primary/5">
+        <div class="flex justify-between items-center px-6 py-4 md:px-margin-desktop max-w-container-max mx-auto">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full overflow-hidden border border-primary/20">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwqNNcoSqe9Ah6Lx4Tx0rlHtV2TQ2OYGZpGjmTyueiorV3JLqJvcEB4SrjWLjHwKgjiRgxe0quI5zElWia7UC4UntZRfLwWXSrnhbHf78HzYJhL2joeeX17zJnkCbz1Fjl8jfOQE-woZ2KA7crlBGn97ea13_SuezosbxgyURUJv_fjoJnLawAjb4-6ykHM6wSrPjiD_KqwYFMvDpp5Ods9_0BRQhQD2dDPBGnDTzs7fV5KlpxycTsT8XN3QShglANIAb1d8tT_w" alt="Professional Developer Profile" class="w-full h-full object-cover">
+                </div>
+                <span class="font-headline-lg-mobile md:font-headline-lg md:text-headline-lg font-bold tracking-tighter text-on-background"></span>
+            </div>
+            
+            <div class="hidden md:flex gap-8 items-center">
+                <a href="#projects" class="text-primary font-bold border-b-2 border-primary transition-all duration-300">Projects</a>
+                <a href="#services" class="text-on-surface-variant hover:text-primary transition-all duration-300">AI Research</a>
+                <a href="#skills" class="text-on-surface-variant hover:text-primary transition-all duration-300">Technical Skills</a>
+            </div>
+
+            <button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-caps text-label-caps hover:scale-95 duration-150 transition-all">
+                Hire Me
+            </button>
+        </div>
+    </nav>
+
+    <main class="relative">
+        <!-- Hero Section -->
+        <section class="min-h-screen flex items-center pt-24 pb-12 px-6 md:px-margin-desktop max-w-container-max mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-stack-md">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="ai-pulse"></div>
+                        <span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">System Online: Voice AI Core</span>
+                    </div>
+                    <h1 class="font-headline-lg-mobile md:font-headline-xl md:text-headline-xl text-on-background">Precision in Code, <br class=""><span class="text-primary">Innovation in Voice</span></h1>
+                    <p class="text-on-surface-variant font-body-base text-body-base max-w-xl">
+                        Crafting high-performance web applications and intelligent AI voice agents. We merge architectural stability with conversational intelligence to build the future of human-tech interaction.
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <button class="bg-primary text-on-primary px-8 py-4 rounded-lg font-label-caps text-label-caps hover:shadow-[0_0_20px_rgba(192,193,255,0.4)] transition-all">
+                            Let's Build Something Great
+                        </button>
+                        <button class="border border-outline-variant text-on-surface hover:bg-white/5 px-8 py-4 rounded-lg font-label-caps text-label-caps transition-all">
+                            View Showcase
+                        </button>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 relative group">
+                    <div class="absolute inset-0 bg-primary/20 blur-[100px] rounded-full group-hover:bg-primary/30 transition-all duration-700"></div>
+                    <div class="relative rounded-2xl overflow-hidden border border-outline-variant/30 glass-panel aspect-[4/5] shadow-2xl">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwqNNcoSqe9Ah6Lx4Tx0rlHtV2TQ2OYGZpGjmTyueiorV3JLqJvcEB4SrjWLjHwKgjiRgxe0quI5zElWia7UC4UntZRfLwWXSrnhbHf78HzYJhL2joeeX17zJnkCbz1Fjl8jfOQE-woZ2KA7crlBGn97ea13_SuezosbxgyURUJv_fjoJnLawAjb4-6ykHM6wSrPjiD_KqwYFMvDpp5Ods9_0BRQhQD2dDPBGnDTzs7fV5KlpxycTsT8XN3QShglANIAb1d8tT_w" alt="KineticDev Lead Developer Portrait" class="w-full h-full object-cover">
+                    </div>
+                    <!-- Stats Overlay Card -->
+                    <div class="absolute -bottom-6 -left-6 glass-panel p-6 rounded-xl border border-primary/20 max-w-[200px]">
+                        <p class="font-headline-lg text-primary leading-none">99.9%</p>
+                        <p class="font-label-caps text-label-caps text-on-surface-variant mt-2">Core System Uptime</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-section-gap px-6 md:px-margin-desktop max-w-container-max mx-auto">
+            <div class="text-center mb-16">
+                <span class="font-label-caps text-label-caps text-primary mb-4 block">Core Competencies</span>
+                <h2 class="font-headline-lg-mobile md:font-headline-lg md:text-headline-lg">Expert Solutions</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+                <!-- Web Dev Card -->
+                <div class="glass-panel p-10 rounded-2xl group hover:border-primary/50 transition-all duration-500">
+                    <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 text-primary">
+                        <span class="material-symbols-outlined text-4xl">code</span>
+                    </div>
+                    <h3 class="font-headline-lg-mobile text-headline-lg-mobile mb-4">Web Development</h3>
+                    <p class="text-on-surface-variant font-body-base text-body-base mb-8">
+                        Modern, scalable, and responsive web solutions engineered for maximum performance. From SPAs to complex enterprise architectures.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-2 text-on-surface font-body-sm text-body-sm">
+                            <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                            Next.js &amp; React Ecosystems
+                        </li>
+                        <li class="flex items-center gap-2 text-on-surface font-body-sm text-body-sm">
+                            <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                            Scalable Node.js Microservices
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- AI Card -->
+                <div class="glass-panel p-10 rounded-2xl border-primary/20 shadow-[0_0_40px_rgba(192,193,255,0.05)] group hover:border-primary/50 transition-all duration-500 relative overflow-hidden">
+                    <div class="absolute -right-12 -top-12 w-48 h-48 bg-primary/5 rounded-full blur-3xl"></div>
+                    <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 text-primary">
+                        <span class="material-symbols-outlined text-4xl" data-weight="fill">record_voice_over</span>
+                    </div>
+                    <h3 class="font-headline-lg-mobile text-headline-lg-mobile mb-4">Voice AI Solutions</h3>
+                    <p class="text-on-surface-variant font-body-base text-body-base mb-8">
+                        Custom AI voice agents for automated customer engagement and smart workflows. Real-time natural language processing.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-2 text-on-surface font-body-sm text-body-sm">
+                            <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                            Low-latency Voice Orchestration
+                        </li>
+                        <li class="flex items-center gap-2 text-on-surface font-body-sm text-body-sm">
+                            <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                            VAPI &amp; OpenAI Integration
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Grid Section -->
+        <section id="skills" class="py-section-gap px-6 md:px-margin-desktop bg-surface-container-lowest/50">
+            <div class="max-w-container-max mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-end gap-6 mb-12">
+                    <div class="max-w-lg">
+                        <span class="font-label-caps text-label-caps text-primary mb-2 block">Technical Stack</span>
+                        <h2 class="font-headline-lg-mobile md:font-headline-lg md:text-headline-lg">Forged in Industry Standards</h2>
+                    </div>
+                    <div class="flex gap-2">
+                        <span class="px-4 py-2 rounded-full border border-outline-variant font-label-caps text-[10px] uppercase text-on-surface-variant">Full Stack</span>
+                        <span class="px-4 py-2 rounded-full border border-outline-variant font-label-caps text-[10px] uppercase text-on-surface-variant">AI-First</span>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+                    <!-- Skill Item -->
+                    <div class="glass-panel p-6 rounded-xl flex flex-col items-center justify-center text-center gap-4 hover:-translate-y-1 transition-transform group">
+                        <div class="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center transition-colors group-hover:bg-primary/20">
+                            <span class="material-symbols-outlined text-primary">dynamic_form</span>
+                        </div>
+                        <span class="font-label-caps text-label-caps">React</span>
+                    </div>
+                    <div class="glass-panel p-6 rounded-xl flex flex-col items-center justify-center text-center gap-4 hover:-translate-y-1 transition-transform group">
+                        <div class="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center transition-colors group-hover:bg-primary/20">
+                            <span class="material-symbols-outlined text-primary">terminal</span>
+                        </div>
+                        <span class="font-label-caps text-label-caps">Node.js</span>
+                    </div>
+                    <div class="glass-panel p-6 rounded-xl flex flex-col items-center justify-center text-center gap-4 hover:-translate-y-1 transition-transform group">
+                        <div class="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center transition-colors group-hover:bg-primary/20">
+                            <span class="material-symbols-outlined text-primary">smart_toy</span>
+                        </div>
+                        <span class="font-label-caps text-label-caps">OpenAI</span>
+                    </div>
+                    <div class="glass-panel p-6 rounded-xl flex flex-col items-center justify-center text-center gap-4 hover:-translate-y-1 transition-transform group">
+                        <div class="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center transition-colors group-hover:bg-primary/20">
+                            <span class="material-symbols-outlined text-primary">integration_instructions</span>
+                        </div>
+                        <span class="font-label-caps text-label-caps">VAPI</span>
+                    </div>
+                    <div class="glass-panel p-6 rounded-xl flex flex-col items-center justify-center text-center gap-4 hover:-translate-y-1 transition-transform group">
+                        <div class="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center transition-colors group-hover:bg-primary/20">
+                            <span class="material-symbols-outlined text-primary">data_object</span>
+                        </div>
+                        <span class="font-label-caps text-label-caps">Python</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section (Bento Grid Style) -->
+        <section class="py-section-gap px-6 md:px-margin-desktop max-w-container-max mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+                <div class="lg:col-span-8 glass-panel p-10 rounded-3xl">
+                    <span class="font-label-caps text-label-caps text-primary mb-4 block">The Identity</span>
+                    <h2 class="font-headline-lg-mobile md:font-headline-lg md:text-headline-lg mb-6">About Me</h2>
+                    <p class="text-on-surface-variant font-body-base text-body-base leading-relaxed">This is more than a name—it's a philosophy of constant motion and technical excellence. We believe that software should be fluid, reacting instantly to user needs and speaking back with human-like intuition. Our focus is on the intersection of robust backend engineering and cutting-edge artificial intelligence.</p>
+                    <div class="mt-8 flex gap-stack-md">
+                        <div class="flex-1">
+                            <h4 class="font-label-caps text-label-caps text-on-surface mb-2">Technical Rigor</h4>
+                            <p class="text-on-surface-variant font-body-sm text-body-sm">Deep commitment to clean architecture and test-driven development.</p>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="font-label-caps text-label-caps text-on-surface mb-2">Voice First</h4>
+                            <p class="text-on-surface-variant font-body-sm text-body-sm">Pioneering the next wave of conversational user interfaces.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-4 bg-primary rounded-3xl p-10 flex flex-col justify-between text-on-primary">
+                    <span class="material-symbols-outlined text-6xl opacity-30">rocket_launch</span>
+                    <div>
+                        <h3 class="font-headline-lg-mobile text-headline-lg-mobile mb-4 leading-tight">Ready to scale your vision?</h3>
+                        <p class="font-body-base text-body-base mb-6 opacity-80">Let's integrate high-performance web systems with intelligent voice capabilities.</p>
+                        <a href="mailto:hello@kineticdev.com" class="inline-flex items-center gap-2 font-label-caps text-label-caps bg-on-primary text-primary px-6 py-3 rounded-full hover:scale-105 transition-all">
+                            Get in Touch <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full py-12 px-margin-desktop bg-surface-container-lowest border-t border-outline-variant/10">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-stack-md max-w-container-max mx-auto">
+            <div class="flex flex-col items-center md:items-start gap-2">
+                <span class="font-headline-lg-mobile text-headline-lg-mobile text-on-background font-bold tracking-tighter"></span>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">© 2024. Precision in Code &amp; Voice.</p><a href="mailto:m.raaiq.shahid@gmail.com" class="font-body-sm text-body-sm text-primary hover:text-on-background transition-colors mt-2 block">m.raaiq.shahid@gmail.com</a><a href="tel:923337960706" class="font-body-sm text-body-sm text-primary hover:text-on-background transition-colors mt-1 block">923337960706</a>
+            </div>
+            
+            <div class="flex gap-8 items-center">
+                <a href="#" class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors">Projects</a>
+                <a href="#" class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors">AI Research</a>
+                <a href="#" class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors">Technical Skills</a>
+                <a href="#" class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors">Contact</a>
+            </div>
+
+            <div class="flex gap-4">
+                <div class="w-8 h-8 rounded-full border border-outline-variant/30 flex items-center justify-center text-on-surface-variant hover:border-primary hover:text-primary transition-all cursor-pointer">
+                    <span class="material-symbols-outlined text-sm">public</span>
+                </div>
+                <div class="w-8 h-8 rounded-full border border-outline-variant/30 flex items-center justify-center text-on-surface-variant hover:border-primary hover:text-primary transition-all cursor-pointer">
+                    <span class="material-symbols-outlined text-sm">terminal</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script class="">
+        // Simple Scroll Reveal Logic
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section, .glass-panel').forEach(el => {
+            el.classList.add('scroll-reveal');
+            observer.observe(el);
+        });
+
+        // Navigation Active State Toggle
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                navLinks.forEach(l =></script></body></html>

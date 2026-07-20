@@ -1,0 +1,10 @@
+{
+  "name": "Remix: voicewebseo",
+  "description": "Imported from GitHub: shehzi2000/voicewebseo",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
